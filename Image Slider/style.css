@@ -1,0 +1,50 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, blue, white, 0.5);
+    height: 100vh;
+    margin: auto;
+}
+
+.img-container{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 600px;
+    background-size: cover;
+    animation: products-img 18s linear  5s infinite;
+}
+
+@keyframes products-img{
+    0%{
+        background-image: url(product-img/product-1.jpg);
+    }
+
+    25%{
+        background-image: url(product-img/product-2.jpg);
+    }
+
+
+    50%{
+        background-image: url(product-img/product-3.jpg);
+    }
+
+
+    75%{
+        background-image: url(product-img/product-4.jpg);
+    }
+
+
+    100%{
+        background-image: url(product-img/product-5.jpg);
+    }
+
+    
+}
